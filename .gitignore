@@ -1,0 +1,7 @@
+.DS_Store
+*.xcuserstate
+*/xcuserdata/*
+gasonwrapper/.DS_Store
+gasonwrapper/ProjectModule/.DS_Store
+gasonwrapperTests/.DS_Store
+*.xcsettings
