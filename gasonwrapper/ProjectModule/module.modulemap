@@ -1,0 +1,4 @@
+module JSONPrivate{
+    header "../JSON.h"
+    export *
+}

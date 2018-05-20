@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B23C17820B0909500E32B55 /* jsonlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B23C17720B0909500E32B55 /* jsonlist.json */; };
 		4B84896220AFD3DA005FC1F6 /* gasonwrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B84895820AFD3DA005FC1F6 /* gasonwrapper.framework */; };
-		4B84896720AFD3DA005FC1F6 /* gasonwrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B84896620AFD3DA005FC1F6 /* gasonwrapperTests.swift */; };
 		4B84896920AFD3DA005FC1F6 /* gasonwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B84895B20AFD3DA005FC1F6 /* gasonwrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B84897320AFDB11005FC1F6 /* gason.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4B84897220AFDB11005FC1F6 /* gason.hpp */; };
+		4B84897520AFDB2A005FC1F6 /* gason.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B84897420AFDB2A005FC1F6 /* gason.cpp */; };
+		4B84897820AFDBCF005FC1F6 /* JSON.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B84897720AFDBCF005FC1F6 /* JSON.mm */; };
+		4B84897A20AFDBE1005FC1F6 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B84897920AFDBE1005FC1F6 /* JSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4B84897E20B013D0005FC1F6 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B84897D20B013D0005FC1F6 /* JSON.swift */; };
+		4BF8B36020B1262E00CBA517 /* gasonwrapper_performanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23C17B20B094F200E32B55 /* gasonwrapper_performanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B23C17720B0909500E32B55 /* jsonlist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonlist.json; sourceTree = "<group>"; };
+		4B23C17920B090B300E32B55 /* gasonwrapper_parsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasonwrapper_parsingTests.swift; sourceTree = "<group>"; };
+		4B23C17B20B094F200E32B55 /* gasonwrapper_performanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasonwrapper_performanceTests.swift; sourceTree = "<group>"; };
 		4B84895820AFD3DA005FC1F6 /* gasonwrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = gasonwrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B84895B20AFD3DA005FC1F6 /* gasonwrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gasonwrapper.h; sourceTree = "<group>"; };
 		4B84895C20AFD3DA005FC1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B84896120AFD3DA005FC1F6 /* gasonwrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gasonwrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B84896620AFD3DA005FC1F6 /* gasonwrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasonwrapperTests.swift; sourceTree = "<group>"; };
 		4B84896820AFD3DA005FC1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B84897220AFDB11005FC1F6 /* gason.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gason.hpp; sourceTree = "<group>"; };
+		4B84897420AFDB2A005FC1F6 /* gason.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gason.cpp; sourceTree = "<group>"; };
+		4B84897720AFDBCF005FC1F6 /* JSON.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JSON.mm; sourceTree = "<group>"; };
+		4B84897920AFDBE1005FC1F6 /* JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		4B84897D20B013D0005FC1F6 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		4B84897F20B013EB005FC1F6 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				4B84895B20AFD3DA005FC1F6 /* gasonwrapper.h */,
+				4B84897D20B013D0005FC1F6 /* JSON.swift */,
+				4B84897920AFDBE1005FC1F6 /* JSON.h */,
+				4B84897720AFDBCF005FC1F6 /* JSON.mm */,
+				4B84897220AFDB11005FC1F6 /* gason.hpp */,
+				4B84897420AFDB2A005FC1F6 /* gason.cpp */,
 				4B84895C20AFD3DA005FC1F6 /* Info.plist */,
+				4B84897620AFDB8B005FC1F6 /* ProjectModule */,
 			);
 			path = gasonwrapper;
 			sourceTree = "<group>";
@@ -80,10 +100,20 @@
 		4B84896520AFD3DA005FC1F6 /* gasonwrapperTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B84896620AFD3DA005FC1F6 /* gasonwrapperTests.swift */,
+				4B23C17920B090B300E32B55 /* gasonwrapper_parsingTests.swift */,
+				4B23C17B20B094F200E32B55 /* gasonwrapper_performanceTests.swift */,
 				4B84896820AFD3DA005FC1F6 /* Info.plist */,
+				4B23C17720B0909500E32B55 /* jsonlist.json */,
 			);
 			path = gasonwrapperTests;
+			sourceTree = "<group>";
+		};
+		4B84897620AFDB8B005FC1F6 /* ProjectModule */ = {
+			isa = PBXGroup;
+			children = (
+				4B84897F20B013EB005FC1F6 /* module.modulemap */,
+			);
+			path = ProjectModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +123,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B84897A20AFDBE1005FC1F6 /* JSON.h in Headers */,
 				4B84896920AFD3DA005FC1F6 /* gasonwrapper.h in Headers */,
+				4B84897320AFDB11005FC1F6 /* gason.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +180,7 @@
 				TargetAttributes = {
 					4B84895720AFD3DA005FC1F6 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					4B84896020AFD3DA005FC1F6 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -184,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B23C17820B0909500E32B55 /* jsonlist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B84897520AFDB2A005FC1F6 /* gason.cpp in Sources */,
+				4B84897820AFDBCF005FC1F6 /* JSON.mm in Sources */,
+				4B84897E20B013D0005FC1F6 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B84896720AFD3DA005FC1F6 /* gasonwrapperTests.swift in Sources */,
+				4BF8B36020B1262E00CBA517 /* gasonwrapper_performanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +259,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -285,7 +322,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -339,6 +376,8 @@
 		4B84896D20AFD3DA005FC1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +395,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nil.gasonwrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/gasonwrapper/ProjectModule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +405,8 @@
 		4B84896E20AFD3DA005FC1F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -381,6 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nil.gasonwrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/gasonwrapper/ProjectModule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +433,8 @@
 		4B84897020AFD3DA005FC1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AR4R964KR;
 				INFOPLIST_FILE = gasonwrapperTests/Info.plist;
@@ -407,6 +453,8 @@
 		4B84897120AFD3DA005FC1F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AR4R964KR;
 				INFOPLIST_FILE = gasonwrapperTests/Info.plist;
