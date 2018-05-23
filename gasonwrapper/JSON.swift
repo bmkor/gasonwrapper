@@ -98,14 +98,14 @@ public class JSON{
     }
     
     
-    subscript(index: UInt) -> JSON?{
+    public subscript(index: UInt) -> JSON?{
         get{
             guard let jz = j[index] else {return nil}
             return JSON(JSON: jz)
         }
     }
     
-    subscript(key: String) -> JSON?{
+    public subscript(key: String) -> JSON?{
         get{
             guard let jz = j[key] else {return nil}
             return JSON(JSON: jz)
