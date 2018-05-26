@@ -18,7 +18,7 @@ public enum JSONType{
     case JSON_NULL
 }
 
-public class JSON{
+open class JSON{
     fileprivate var j:JSONPrivate
     
     public init(data:Data) throws{
