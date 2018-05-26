@@ -29,7 +29,7 @@ open class JSON{
         }
     }
     
-    private init(JSON:JSONPrivate) {
+    fileprivate init(JSON:JSONPrivate) {
         j = JSON
     }
     
