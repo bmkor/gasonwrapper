@@ -17,9 +17,7 @@ class gasonwrapper_parsingTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        let p = JSON()
-        print("tttttt \(p.getType)")
+        // Put setup code here. This method is called before the invocation of each test method in the class.             
         if let url = Bundle(for:type(of: self)).url(forResource: "jsonlist", withExtension: "json"), let casepaths = try? Data(contentsOf: url){
             g = try? JSON(data: casepaths)
             
