@@ -21,6 +21,10 @@ public enum JSONType{
 open class JSON{
     fileprivate var j:JSONPrivate
     
+    public init(){
+        j = JSONPrivate()
+    }
+    
     public init(data:Data) throws{
         do {
             j = try JSONPrivate(data: data)

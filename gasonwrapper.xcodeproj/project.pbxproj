@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08C9B0F420BBBEB8009B0379 /* gasonwrapper_parsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23C17920B090B300E32B55 /* gasonwrapper_parsingTests.swift */; };
 		4B23C17820B0909500E32B55 /* jsonlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B23C17720B0909500E32B55 /* jsonlist.json */; };
 		4B84896220AFD3DA005FC1F6 /* gasonwrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B84895820AFD3DA005FC1F6 /* gasonwrapper.framework */; };
 		4B84896920AFD3DA005FC1F6 /* gasonwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B84895B20AFD3DA005FC1F6 /* gasonwrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,7 +16,6 @@
 		4B84897820AFDBCF005FC1F6 /* JSON.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B84897720AFDBCF005FC1F6 /* JSON.mm */; };
 		4B84897A20AFDBE1005FC1F6 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B84897920AFDBE1005FC1F6 /* JSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4B84897E20B013D0005FC1F6 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B84897D20B013D0005FC1F6 /* JSON.swift */; };
-		4BF8B36020B1262E00CBA517 /* gasonwrapper_performanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B23C17B20B094F200E32B55 /* gasonwrapper_performanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF8B36020B1262E00CBA517 /* gasonwrapper_performanceTests.swift in Sources */,
+				08C9B0F420BBBEB8009B0379 /* gasonwrapper_parsingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

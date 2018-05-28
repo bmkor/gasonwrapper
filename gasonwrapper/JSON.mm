@@ -20,6 +20,12 @@ const int SHIFT_WIDTH = 4;
 
 @implementation JSONPrivate
 
+- (nonnull instancetype) init{
+    self = [super init];
+    self.value = JsonValue();
+    return self;
+}
+
 - (nullable instancetype)initWithData:(NSData *)data error:(NSError * _Nullable * _Nullable)error{
     self = [super init];
     if (self) {

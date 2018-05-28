@@ -32,6 +32,7 @@ typedef NS_ENUM(NSUInteger, JsonType){
 - (nullable JSONPrivate *) objectAtIndexedSubscript:(NSUInteger) index;
 - (nullable JSONPrivate *) objectForKeyedSubscript:(nonnull NSString *) key;
 - (nullable instancetype)initWithData:(NSData *_Nonnull)data error:(NSError * _Nullable * _Nullable)error;
+- (instancetype _Nonnull) init;
 @end
 
 #endif /* JSON_h */
