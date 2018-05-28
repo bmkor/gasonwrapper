@@ -29,6 +29,10 @@ open class JSON{
         }
     }
     
+    public init(json:JSON) {
+        j = json.j
+    }
+    
     fileprivate init(JSON:JSONPrivate) {
         j = JSON
     }
