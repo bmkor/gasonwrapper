@@ -21,7 +21,7 @@ public enum JSONType{
 open class JSON{
     fileprivate var j:JSONPrivate
     
-    public init(){
+    public required init(){
         j = JSONPrivate()
     }
     
