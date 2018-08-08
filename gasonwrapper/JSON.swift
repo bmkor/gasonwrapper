@@ -104,8 +104,7 @@ open class JSON{
             return j.toString()
         }
     }
-    
-    
+        
     public subscript(index: UInt) -> JSON?{
         get{
             guard let jz = j[index] else {return nil}
