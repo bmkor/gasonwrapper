@@ -37,7 +37,9 @@ const int SHIFT_WIDTH = 4;
         _allocator = new JsonAllocator;
         _value = JsonValue();
         
-        int r = jsonParse((char *)_d.bytes, &_endptr, &_value, *(_allocator));
+        NSData *dcpy = [_d copy];
+        
+        int r = jsonParse((char *) dcpy.bytes, &_endptr, &_value, *(_allocator));
         
         if (r){
             const char *e = jsonStrError(r);
